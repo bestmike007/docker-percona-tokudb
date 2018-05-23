@@ -4,7 +4,7 @@ MAINTAINER Yuanhai He <i@bestmike007.com>
 ENV PERCONA_VERSION='5.7.21-21-3.xenial'
 RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update && \
-    apt-get install -y vim curl && \
+    apt-get install -y curl && \
     curl -sSLO https://repo.percona.com/apt/percona-release_0.1-4.xenial_all.deb && \
     dpkg -i percona-release_0.1-4.xenial_all.deb && \
     rm percona-release_0.1-4.xenial_all.deb && \
